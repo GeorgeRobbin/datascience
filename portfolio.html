@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<HTML lang="en">
+  <head>
+  <meta charset="UTF-8" />
+
+  <title>George Robbin DS</title>
+  <link rel="stylesheet" href="portfolio.css"/>
+    <script src="https://kit.fontawesome.com/7ee2706f3a.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+      <!--Navbar section-->
+      <nav class="navbar">
+        <div class="navbar__container">
+          <a href="/" id="navbar__logo"><i class="fa-solid fa-database"></i>GR Data Science</a>
+          <div class="navbar__toggle" id="mobile-menu" >
+           <span class="bar"></span>
+           <span class="bar"></span>
+           <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="/index.html" class="navbar__links">Home </a>
+            </li>
+            <li class="navbar__item">
+              <a href="https://rapidcharts.io/datascience" class="navbar__links">Data Science course</a>
+              </li>
+              <li class="navbar__item">
+                <a href="project.html" class="navbar__links">Project</a>
+                </li>
+                <li class="navbar__item">
+                  <a href="https://github.com/GeorgeRobbin/GeorgeRobbin.github.io" class="navbar__links">Github repository</a>
+                  </li>
+
+          </ul>
+        </div>
+      </nav>
+
+      <div class = Portfolio>
+        <container class="hcontainer">
+          <h2 class="bodyText"><span style="color: rgb(65, 48, 34); font-weight: 700;">Data Science Portfolio: </span>George Robbin 2043457</h2>
+        </container>
+
+
+
+    <!--- Week 1 ---->
+    <container class="hcontainer">
+      <h2 class="bodyText"><span style="color: rgb(65, 48, 34); font-weight: 700;">Week 1: </span>Embedding</h2>
+    </container>
+      <container class="hcontainer" id="container1">
+        <div class="box" id="#w1">
+          <h3>Premiership home advantage</h3>
+          <p>Data presents the cumulative goals scored by home and away teams investigating home advantage in football.</p>
+         <div class="chart" id="Chart1a"></div>
+       </div>
+       <div class="box">
+          <h3>Dogecoin price</h3>
+          <p>My second chart displays the historical price of dogecoin in USD</p>
+         <div class="chart" id="Chart1b"></div>
+      </div>
+     </container>
+
+
+    <!--- Week 2 ---->
+     <container class="hcontainer">
+       <h2 class="bodyText"><span style="color: rgb(65, 48, 34); font-weight: 700;">Week 2: </span>Correcting FT chart</h2>
+     </container>
+     <container class="hcontainer" id="container2">
+      <div class="box" id="#w2">
+        <h3>Replicating original chart</h3>
+        <p>IMF lending outstanding to all members</p>
+       <div class="chart" id="Chart2a"></div>
+      </div>
+      <div class="box">
+        <h3>Adaption of chart</h3>
+        <p>IMF lending outstanding relative to Global GDP. After adjusting the data relative to GDP, the riskiest year to invest was 1984.</p>
+       <div class="chart" id="Chart2b"></div>
+      </div>
+     </container>
+
+     <!--- Week 3 ---->
+    <container class="hcontainer">
+      <h2 class="bodyText"><span style="color: rgb(65, 48, 34); font-weight: 700;">Week 3: </span>Inline data objects and Visual Encodings</h2>
+    </container>
+    <container class="hcontainer" id="container1">
+       <div class="box" id="#w3">
+         <h3>Inline Data Object</h3>
+         <p>AMC Returns 2021-2022 </p>
+       <div class="chart" id="Chart3a"></div>
+         <h3>Diffrent Visual Encoding</h3>
+         <p>AMC returns presented as a candlestick chart. Candlestick charts are useful when displaying financial data to help traders determine possible price movements based on past patterns. </p>
+       <div class="chart" id="Chart3b"></div>
+      </div>
+    </container>
+
+    <!--- Week 4 ---->
+     <container class="hcontainer">
+       <h2 class="bodyText"><span style="color: rgb(65, 48, 34); font-weight: 700;">Week 4: </span>Implementing Data Scraper</h2>
+     </container>
+     <container class="hcontainer" id="container2">
+      <div class="box" id="#w2">
+        <h3>London Olympics 2012</h3>
+        <p>This chart shows the breakdown of the mdeals won by the top 20 ranked nations at the 2012 Olympics. Data was scraped from Wikipedia and the analysis can be found <a href="https://colab.research.google.com/drive/1fi4Je8Z_JzKv_PaE9eyWswN9qJpkBx6F#scrollTo=tInMQ2XoKSWx"> here</a></p>
+       <div class="chart" id="Chart4a"></div>
+      </div>
+     </container>
+
+     <!--- Week 5---->
+      <container class="hcontainer">
+        <h2 class="bodyText"><span style="color: rgb(65, 48, 34); font-weight: 700;">Week 5: </span>Building a Dashboard</h2>
+      </container>
+      <container class="hcontainer" id="container">
+       <div class="box_w5" id="#w2">
+         <h3></h3>
+         <p>    Built using loops to download from ONS API, link to Collab notebook can be found<a href="https://colab.research.google.com/drive/1YbJZ3FJqD6mhpr5a_zeJCzwC-gsQQI1G#scrollTo=4GKmRFFo7d7u"> here</a></p>
+         <div class="grid">
+           <div class="chart" id="Chart5a"></div>
+           <div class="chart" id="Chart5b"></div>
+           <div class="chart" id="Chart5c"></div>
+           <div class="chart" id="Chart5d"></div>
+           <div class="chart" id="Chart5e"></div>
+           <div class="chart" id="Chart5f"></div>
+           <div class="chart" id="Chart5g"></div>
+           <div class="chart" id="Chart5h"></div>
+           <div class="chart" id="Chart5i"></div>
+         </div>
+       </div>
+      </container>
+
+     <!--- Week 7---->
+     <container class="hcontainer">
+       <h2 class="bodyText"><span style="color: rgb(65, 48, 34); font-weight: 700;">Week 7: </span>Maps</h2>
+     </container>
+     <container class="hcontainer" id="container2">
+      <div class="box" id="#w2">
+        <h3>Map 1- South American Countries</h3>
+        <p>Map of South America utilising tooltip function</p>
+       <div class="chart" id="Chart6a"></div>
+      </div>
+      <div class="box">
+        <h3>Map 2 - South American Countries by GDP</h3>
+        <p>This map uses the 'lookup' function to illustrate data on GDP per capita </p>
+       <div class="chart" id="Chart6b"></div>
+      </div>
+     </container>
+
+     <!--- Week 8---->
+     <container class="hcontainer">
+       <h2 class="bodyText"><span style="color: rgb(65, 48, 34); font-weight: 700;">Week 8: </span>Festival of Economics</h2>
+     </container>
+     <container class="hcontainer" id="container2">
+      <h3>Crypto...Currency of the future?</h3>
+      <p>These graphs are based on the arguement that cryptocurrency could be used by developing countries in the future as a safer form of currency.</p>
+     </container>
+     <container class="hcontainer" id="container1">
+        <div class="box" id="#w8">
+          <h3>Crypto Usage and GDP</h3>
+          <p>This chart aims to show correlation between crypto ownage/usage and GDP growth in 2022 relative to poulation size. </p>
+        <div class="chart" id="Chart7a"></div>
+          <h3>Volatility of Bitcoin</h3>
+          <p>This chart compares the volatility of BTC with other FIAT currencies. we observe that whilst BTC remains more volatile, the difference between BTC and the other currencies is smaller than ever.</p>
+        <div class="chart1" id="Chart7b"></div>
+       </div>
+     </container>
+
+
+     <!--- Week 9---->
+     <container class="hcontainer">
+       <h2 class="bodyText"><span style="color: rgb(65, 48, 34); font-weight: 700;">Week 9: </span>Advanced Charts</h2>
+     </container>
+     <container class="hcontainer" id="container2">
+      <div class="box" id="#w2">
+        <h3>Rebasing</h3>
+        <p>Using rebasing to compare the economies of the last 4 World Cup hosts.</p>
+       <div class="chart" id="Chart8a"></div>
+      </div>
+      <div class="box">
+        <h3>Trellis</h3>
+        <p>Using a Trellis to compare tourism statistics across the last 4 World Cup hosts.</p>
+       <div class="chart" id="Chart8b"></div>
+      </div>
+     </container>
+
+     <!--- Week 10---->
+     <container class="hcontainer">
+       <h2 class="bodyText"><span style="color: rgb(65, 48, 34); font-weight: 700;">Week 10: </span>Machiene learning</h2>
+     </container>
+     <container class="hcontainer" id="container2">
+      <div class="box" id="#w2">
+        <h3>Rebasing</h3>
+        <p>Using rebasing to compare the economies of the last 4 World Cup hosts.</p>
+       <div class="chart" id="Chart"></div>
+      </div>
+      <div class="box">
+        <h3>Trellis</h3>
+        <p>Using a Trellis to compare tourism statistics across the last 4 World Cup hosts.</p>
+       <div class="chart" id="Chart"></div>
+      </div>
+     </container>
+
+
+
+
+    </body>
+
+    <script src="Charts/apps.js"></script>
+
+    <script type="text/javascript">
+    var myChart1a = "Charts/chartFootball1.json";
+    vegaEmbed('#Chart1a', myChart1a);
+    var myChart1b = "Charts/chartcrypto5.json";
+    vegaEmbed('#Chart1b', myChart1b);
+    </script>
+
+    <script>
+    var myChart2a = "Charts/IMF_total_outstanding.json";
+    vegaEmbed('#Chart2a', myChart2a);
+    var myChart2b = "Charts/IMF_total_outstanding_GDP.json";
+    vegaEmbed('#Chart2b', myChart2b);
+    </script>
+
+    <script>
+    var myChart3a = "Charts/AMC_Bar.json";
+    vegaEmbed('#Chart3a', myChart3a);
+    var myChart3b = "Charts/AMC_Candle.json";
+    vegaEmbed('#Chart3b', myChart3b);
+    </script>
+
+    <script>
+    var myChart4a = "Charts/London2012.json";
+    vegaEmbed('#Chart4a', myChart4a);
+    </script>
+
+    <script>
+    var myChart5a = "Charts/data_ONS-MGSX.json";
+    vegaEmbed('#Chart5a', myChart5a);
+    var myChart5b = "Charts/data_ONS-MGVF.json";
+    vegaEmbed('#Chart5b', myChart5b);
+    var myChart5c = "Charts/data_ONS-YBWH.json";
+    vegaEmbed('#Chart5c', myChart5c);
+    var myChart5d = "Charts/data_ONS-YBYE.json";
+    vegaEmbed('#Chart5d', myChart5d);
+    var myChart5e = "Charts/data_ONS-YBYW.json";
+    vegaEmbed('#Chart5e', myChart5e);
+    var myChart5f = "Charts/data_ONS-YBZI.json";
+    vegaEmbed('#Chart5f', myChart5f);
+    var myChart5g = "Charts/data_ONS-YCNK.json";
+    vegaEmbed('#Chart5g', myChart5g);
+    var myChart5h = "Charts/data_ONS-AGOL.json";
+    vegaEmbed('#Chart5h', myChart5h);
+    var myChart5i = "Charts/data_ONS-YCPL.json";
+    vegaEmbed('#Chart5i', myChart5i);
+    </script>
+
+    <script>
+    var myChart6a = "Charts/maps1.json";
+    vegaEmbed('#Chart6a', myChart6a);
+    var myChart6b = "Charts/maps2.json";
+    vegaEmbed('#Chart6b', myChart6b);
+    </script>
+
+    <script>
+    var myChart7a = "Charts/Crypto1.json";
+    vegaEmbed('#Chart7a', myChart7a);
+    var myChart7b = "Charts/BTC_Volatility.json";
+    vegaEmbed('#Chart7b', myChart7b);
+    </script>
+
+    <script>
+    var myChart8a = "Charts/WorldCup_hosts_GDP_Rebased.json";
+    vegaEmbed('#Chart8a', myChart8a);
+    var myChart8b = "Charts/WC_Tourism.json";
+    vegaEmbed('#Chart8b', myChart8b);
+    </script>
+
+
+
+
+    </script>
+    <script src="Charts/apps.js" ></script>
+
+
+
+
+
+
+<script src="apps.js" ></script>
