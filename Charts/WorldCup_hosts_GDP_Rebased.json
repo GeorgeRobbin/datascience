@@ -1,0 +1,56 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "title": {
+      "text": "Comparing four economies",
+      "subtitle":["GDP, constant prices. Rebased, 1989=100. Source: World Bank.",""],
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"},
+
+  "data": {
+      "url": "https://raw.githubusercontent.com/GeorgeRobbin/GeorgeRobbin.github.io/main/WC_GDP.csv"
+      },
+
+
+  "transform": [
+      {"calculate": "datum.Russia/75042.76337*100", "as": "Russia_Index"},
+      {"calculate": "datum.South_Africa/2368.451*100", "as": "SA_Index"},
+      {"calculate": "datum.Brazil/2187.847634*100", "as": "Brazil_Index"},
+      {"calculate": "datum.Germany/2005.568963*100", "as": "Germany_Index"}],
+
+  "XYZrepeat": {"layer": ["South Africa", "Brazil", "Russia", "Germany"]},
+  "repeat": {"layer": ["SA_Index", "Brazil_Index", "Russia_Index", "Germany_Index"]},
+
+  "height": 300,
+  "width": 300,
+
+  "spec": {
+      "mark": {
+          "type":"line",
+          "strokeWidth":2},
+
+      "encoding": {
+          "x": {
+              "field": "Year",
+              "type": "temporal",
+              "title":null,
+              "axis":{
+                "grid": false
+              }},
+
+          "y": {
+              "field": {"repeat": "layer"},
+              "type": "quantitative",
+              "title": null},
+
+          "color": {
+              "datum": {"repeat": "layer"},
+              "scale": {"range": ["black", "green", "orange", "pink"]},
+              "legend": {
+                "orient":"top-left",
+                "fillColor":"white"}}
+                }
+          }
+          }

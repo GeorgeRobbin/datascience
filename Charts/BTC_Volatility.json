@@ -1,0 +1,82 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Historival Volatility of Bitcoin",
+    "subtitle": [
+      "Historical volatility of bitcoin, Source: Yahoo Finance",
+      "Calculations done myself, all currencies are x:USD ",
+      "2018-2020",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "#000000",
+    "subtitleColor": "#B3B3B3"
+  },
+  "config": {"background": "#ffffff", "view": {"stroke": "transparent"}},
+  "data": {
+    "url": "https://raw.githubusercontent.com/GeorgeRobbin/GeorgeRobbin.github.io/main/BTC_Volatility.csv"
+  },
+
+  "width": 1000,
+  "height": 350,
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": null,
+      "axis": {
+        "grid": false,
+        "domainColor": "#000000",
+        "labelColor": "#000000",
+        "tickColor": "#B3B3B3",
+        "gridColor": "black"
+      }
+    },
+    "y": {
+      "field": "price",
+      "type": "quantitative",
+      "scale": {"domain": [0, 190]},
+      "title": "Historical Volatility (Annualised, SA)",
+      "axis": {
+        "grid": false,
+        "domainColor": "#B3B3B3",
+        "labelColor": "#000000",
+        "tickColor": "#B3B3B3",
+        "gridColor": "black",
+        "titleColor": "#000000"
+      }
+    },
+    "color": {
+      "field": "symbol",
+      "legend": {
+        "orient": "bottom",
+        "direction": "horizontal",
+        "title": "Symbol",
+        "labelColor": "#000000",
+        "titleColor": "#000000"
+      }
+    },
+    "opacity": {"condition": {"param": "hover", "value": 1}, "value": 0.2},
+    "tooltip": [
+      {"field": "Symbol", "title": "Index"},
+      {"field": "Value", "title": "Value", "type": "quantitative"},
+      {"field": "Date", "type": "temporal"}
+    ]
+  },
+  "layer": [
+    {
+      "description": "transparent layer to make it easier to trigger selection",
+      "params": [
+        {
+          "name": "hover",
+          "value": [{"Index": "Symbol"}],
+          "select": {"type": "point", "fields": ["Index"], "on": "mouseover"}
+        }
+      ],
+      "mark": {"type": "line", "strokeWidth": 8, "stroke": "transparent"}
+    },
+    {"mark": "line"}
+  ]
+}
